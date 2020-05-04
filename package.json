@@ -6,12 +6,20 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "axios": "^0.19.2",
+    "date-fns": "^2.12.0",
+    "date-fns-tz": "^1.0.10",
     "react": "^16.13.1",
     "react-date-picker": "^8.0.1",
     "react-datepicker": "^2.14.1",
     "react-dom": "^16.13.1",
     "react-feather": "^2.0.8",
-    "react-scripts": "3.4.1"
+    "react-helmet": "^6.0.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.4.1",
+    "react-table": "^7.0.4",
+    "react-tooltip": "^4.2.5",
+    "react-use": "^14.2.0"
   },
   "scripts": {
     "start": "react-scripts start",

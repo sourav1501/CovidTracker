@@ -5,7 +5,14 @@
 font-size: 2em;
 }
 .navbar{
-    width:80px; 
+    background: #f6f6f7;
+    flex-direction: column;
+    height: 100%;
+    justify-content: flex-start;
+    min-width: 5rem;
+    position: fixed;
+    z-index: 99999;
+
 }
 .fa {
 position: relative;
@@ -58,13 +65,14 @@ background:#f6f6f7;
 position:absolute;
 top:0;
 bottom:0;
-height:100%;
+height: 100vh;
 left:0;
 width:80px;
 overflow:hidden;
 -webkit-transition:width .05s linear;
 transition:width .05s linear;
 z-index:1000;
+
 }
 
 

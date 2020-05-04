@@ -1,0 +1,87 @@
+.Level,
+.mini-graph {
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 30rem;
+}
+h1 {
+    font-family: 'archia';
+    font-size: 26px !important;
+    font-weight: 900;
+}
+h2 {
+    font-family: 'archia';
+    font-size: 20px !important;
+    font-weight: 400;
+}
+h3 {
+    font-family: 'archia';
+    font-size: 16px !important;
+    font-weight: 400;
+}
+h4 {
+    font-family: 'archia';
+    font-size: 15px !important;
+    font-weight: 900;
+}
+h5 {
+    font-family: 'archia';
+    font-size: 14px !important;
+    font-weight: 900;
+}
+h6 {
+    font-family: 'archia';
+    font-size: 13px !important;
+    font-weight: 600;
+}
+.mini-graph .svg-parent {
+  background: transparent !important;
+  width: 25%;
+}
+.mini-graph .svg-parent,
+.TimeSeries .svg-parent {
+  align-self: center;
+  background: rgba(255, 7, 58, 0.12549);
+  border-radius: 5px;
+  display: flex;
+  position: relative;
+  width: 30rem;
+}
+.Level h5 {
+  font-weight: 600;
+}
+.Level .level-item {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+.Level .is-cherry h5,
+.Level .is-cherry h1 {
+  color: #ff073a;
+}
+.Level .is-blue h1,
+.Level .is-blue h5 {
+  color: #007bff;
+}
+.Level .is-green h1,
+.Level .is-green h5 {
+  color: #28a745;
+}
+.Level .is-gray h1,
+.Level .is-gray h5 {
+  color: #6c757d;
+}
+.Level .is-cherry h4 {
+  color: rgba(255, 7, 58, 0.6);
+}
+.Level .is-blue h4 {
+  color: rgba(0, 123, 255, 0.6);
+}
+.Level .is-green h4 {
+  color: rgba(40, 167, 69, 0.6);
+}
+.Level .is-gray h4 {
+  color: rgba(108, 117, 125, 0.6);
+}

@@ -1,0 +1,300 @@
+table {
+    align-self: center;
+    border-collapse: separate;
+    border-spacing: 3px 4px;
+    font-family: "archia";
+    position: relative;
+    width: 30rem;
+    margin: 20px 0;
+  }
+  table thead {
+    background: rgba(108, 117, 125, 0.0627451);
+    color: #6c757d;
+    font-size: 0.75rem;
+    text-align: left;
+  }
+  table thead th {
+    background: #f6f6f7;
+    border-radius: 5px;
+   
+    cursor: pointer;
+    padding: 0.5rem;
+    position: -webkit-sticky !important;
+    position: sticky !important;
+    top: 5px;
+    transition: all 0.1s ease-in-out;
+    z-index: 99;
+  }
+  table tbody {
+    color: #6c757d;
+  }
+  table thead th:hover {
+    background: #ecedee;
+}
+  table tbody tr:nth-child(odd) {
+    background: rgba(108, 117, 125, 0.0627451);
+  }
+  table tbody tr.is-highlighted {
+    background: rgba(108, 117, 125, 0.12549) !important;
+  }
+  table thead th .heading-content {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: 0.9rem;
+    justify-content: space-between;
+    position: relative;
+}
+table thead th .heading-content abbr {
+    text-align: right;
+}
+  .table-fineprint {
+    color: rgba(108, 117, 125, 0.6);
+    font-weight: 600;
+    margin: 0 0.25rem 0.25rem 0;
+    text-align: right;
+  }
+  table thead th .heading-content svg {
+    color: #6c757d 99;
+    margin: 0;
+    margin-left: 0.25rem;
+    margin-top: 0.15rem;
+    right: 0;
+    stroke-width: 4px;
+    width: 10px;
+}
+table tbody td {
+    border-radius: 4px;
+    font-size: 1.2em;
+    padding: .25rem;
+    text-align: right;
+}
+  
+  table tbody tr {
+    cursor: pointer;
+  }
+  /* table tbody td .delta.is-confirmed {
+    color: #ff073a;
+} */
+table tbody {
+    color: #6c757d;
+    max-width: 10rem;
+}
+table tbody tr {
+    cursor: pointer;
+}
+table tbody tr.is-highlighted {
+    background: #6c757d 20 !important;
+}
+table tbody tr:hover {
+    background: #6c757d 20 !important;
+}
+ table tbody tr:hover .dropdown {
+    background: #6c757d 20;
+}
+table tbody tr.divider {
+    background: #6c757d 10 !important;
+    height: 0.5rem;
+}
+
+table tbody tr.spacer {
+    background: #fff !important;
+    height: 2rem;
+}
+table tbody td {
+    border-radius: 5px;
+    font-size: 0.9rem;
+    padding: 0.25rem;
+    text-align: right;
+}
+
+table tbody td:first-child {
+   
+    text-align: left;
+    word-wrap: break-word;
+}
+table tbody td .deltas {
+    display: inline-block;
+    font-size: 11px !important;
+}
+table tbody td .deltas svg {
+    height: 9px;
+    stroke-width: 3;
+    vertical-align: -0.25px;
+    width: 9px;
+}
+table tbody td a {
+    height: 1px;
+}
+table tbody td a svg {
+    align-self: center;
+    color: #6c757d 99;
+    margin-left: 2px;
+    stroke-width: 3px;
+    transition: all 0.2s ease-in-out;
+    vertical-align: -0.435rem;
+    width: 12px;
+}
+table tbody td a svg:hover {
+    stroke: #6c757d;
+}
+table tbody .table__count-text {
+    margin-left: 0.25rem;
+}
+table tbody .state-last-update {
+    background: transparent;
+    color: #28a745 !important;
+    height: 2rem;
+}
+table tbody .state-last-update h6 {
+    margin: 0;
+}
+table tbody .state-last-update:hover {
+    background: transparent !important;
+}
+table tbody .state-last-update .disclaimer {
+    backdrop-filter: saturate(180%) blur(20px);
+    background: #6c757d 10;
+    border-radius: 5px;
+    color: #6c757d;
+    display: flex;
+    flex-direction: row;
+    font-family: 'archia';
+    font-size: 12px;
+    left: 0;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    width: 14rem;
+}
+table tbody .state-last-update .disclaimer svg {
+    margin-right: 0.25rem;
+    margin-top: -0.25rem;
+    stroke-width: 2px;
+    width: 20px !important;
+}
+table tbody .state-last-update .state-page-link {
+    padding: 0 !important;
+}
+table tbody .state-last-update .state-page-link a {
+    background: #ffc107 20;
+    border-radius: 5px;
+    color: #fd7e14;
+    font-size: 0.75rem;
+    padding: 0.5rem;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+table tbody .state-last-update .state-page-link a:hover {
+    background: #ffc107 30;
+}
+table tbody .state-last-update .state-page-link a:hover svg {
+    stroke: #fd7e14;
+}
+
+table tbody .district-heading {
+    background: #6c757d 10;
+}
+table tbody .district-heading:hover {
+    background: #6c757d 10 !important;
+}
+table tbody .district-heading td {
+    background: #6c757d 10;
+    color: #343a40;
+    font-size: 0.75rem;
+    font-weight: 900;
+    padding: 0.45rem;
+}
+table tbody .district-heading td .heading-content {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: 0.9rem;
+    justify-content: space-between;
+    position: relative;
+}
+table tbody .district-heading td .heading-content abbr {
+    text-align: right;
+}
+table tbody .district-heading td .heading-content svg {
+    color: #6c757d 99;
+    margin: 0;
+    margin-left: 0.25rem;
+    margin-top: 0.15rem;
+    right: 0;
+    stroke-width: 4px;
+    width: 10px;
+}
+table .affected-count {
+    color: #6c757d 99;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: -1rem;
+}
+table .is-total td {
+    background: #6c757d 20;
+}
+table .table__title-wrapper {
+    position: relative;
+}
+table .table__title-wrapper > * {
+    align-self: center;
+}
+table .table__title-wrapper .actual__title-wrapper .__react_component_tooltip {
+    font-size: 0.8em;
+    max-width: 200px;
+}
+table .table__title-wrapper .actual__title-wrapper svg {
+    color: #6c757d 99;
+    height: 12px;
+    padding-left: 2px;
+    stroke-width: 3;
+    vertical-align: -1.5px;
+    width: 12px;
+}
+table .unknown .__react_component_tooltip {
+    font-size: 0.8em;
+    max-width: 200px;
+}
+table tbody td .delta svg {
+    height: 9px;
+    stroke-width: 3;
+    vertical-align: -.25px;
+    width: 9px;
+}
+table tbody td .delta {
+    display: inline-block;
+    font-size: 11px!important;
+}
+/* table tbody .title-chevron .title-icon svg {
+    color: rgba(108,117,125,.6);
+    padding-left: 2px;
+    stroke-width: 3;
+    vertical-align: -6.5px;
+    width: 12px;
+} */
+/* .title-chevron{
+    display: flex;
+    align-items: center;
+} */
+/* table tbody td .delta.is-recovered {
+    color: #28a745;
+} */
+/* .arrow-down, .arrow-up {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    margin-left: .25rem;
+}
+.arrow-down {
+    border-top: 5px solid rgba(108,117,125,.6);
+}
+.arrow-up {
+    border-bottom: 5px solid rgba(108,117,125,.6);
+}
+abbr{
+    text-decoration: none;
+}
+table .heading-content abbr {
+    color: #6c757d;
+    text-align: right;
+} */
