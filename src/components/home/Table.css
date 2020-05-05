@@ -1,0 +1,135 @@
+table {
+  align-self: center;
+  border-collapse: separate;
+  border-spacing: 3px 4px;
+  font-family: "archia";
+  position: relative;
+  width: 30rem;
+}
+table thead {
+  background: rgba(108, 117, 125, 0.0627451);
+  color: #6c757d;
+  font-size: 0.75rem;
+  text-align: left;
+}
+table thead th {
+  background: #f6f6f7;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 0.5rem;
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  top: 5px;
+  transition: all 0.1s ease-in-out;
+  z-index: 99;
+}
+table tbody {
+  color: #6c757d;
+}
+table tbody tr:nth-child(odd) {
+  background: rgba(108, 117, 125, 0.0627451);
+}
+table tbody tr.is-highlighted {
+  background: rgba(108, 117, 125, 0.12549) !important;
+}
+.table-fineprint {
+  color: rgba(108, 117, 125, 0.6);
+  font-weight: 600;
+  margin: 0 0.25rem 0.25rem 0;
+  text-align: right;
+}
+
+table tbody tr {
+  cursor: pointer;
+}
+table .heading-content {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: 0.9rem;
+  justify-content: space-between;
+  position: relative;
+}
+table .heading-content abbr {
+  color: #6c757d;
+  text-align: right;
+  text-decoration: none;
+}
+.arrow-down,
+.arrow-up {
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  margin-left: 0.25rem;
+}
+.arrow-up {
+  border-bottom: 5px solid rgba(108, 117, 125, 0.6);
+}
+.arrow-down {
+  border-top: 5px solid rgba(108, 117, 125, 0.6);
+}
+table tbody .title-chevron {
+  position: relative;
+}
+table .dropdown {
+  background: rgba(108, 117, 125, 0.0627451);
+  border-radius: 50%;
+  cursor: pointer;
+  height: 13px;
+  left: -1.25rem;
+  position: absolute;
+  top: 0.125rem;
+  transition: background 0.2s ease-in-out;
+  width: 13px;
+}
+table .dropdown svg {
+  left: 1px;
+  position: absolute;
+  stroke-width: 3;
+  top: -0.35rem;
+  width: 11px;
+}
+
+table tbody td.is-Red {
+  background: rgba(255, 7, 58, 0.12549);
+  border-left: 5px solid rgba(255, 7, 58, 0.6);
+  color: #ff073a;
+}
+table tbody td.is-Orange {
+  background: rgba(255, 193, 7, 0.12549);
+  border-left: 5px solid rgba(253, 126, 20, 0.6);
+  color: #fd7e14;
+}
+table tbody td.is-Green {
+  background: rgba(40, 167, 69, 0.12549);
+  border-left: 5px solid rgba(40, 167, 69, 0.6);
+  color: #28a745;
+}
+table tbody .title-chevron .title-icon svg {
+  color: rgba(108, 117, 125, 0.6);
+  padding-left: 2px;
+  stroke-width: 3;
+  vertical-align: -6.5px;
+  width: 12px;
+}
+table tbody td .delta.is-confirmed {
+  color: #ff073a;
+}
+table tbody td .delta.is-recovered {
+  color: #28a745;
+}
+table tbody td .delta.is-active {
+  color: #007bff;
+}
+table tbody td .delta.is-deaths {
+  color: #6c757d;
+}
+table tbody td .delta {
+  display: inline-block;
+  font-size: 11px !important;
+}
+table tbody td .delta svg {
+  height: 9px;
+  stroke-width: 3;
+  vertical-align: -0.25px;
+  width: 9px;
+}

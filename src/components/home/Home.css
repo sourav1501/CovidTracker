@@ -1,0 +1,51 @@
+.Home {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+  margin-left: 10rem;
+  margin-right: 5rem;
+  
+}
+.Home .home-left,
+.Home .home-right {
+  display: flex;
+  flex-direction: column;
+  width: 30rem;
+  margin: 75px 0;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+.actions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+.actions h5 {
+  color: #6c757d;
+  font-weight: 600;
+  margin: 0;
+}
+.actions .bell-icon {
+  height: 24px;
+  position: relative;
+  padding-left: 4px;
+}
+.actions svg {
+  color: rgba(108, 117, 125, 0.6);
+  cursor: pointer;
+  stroke-width: 3;
+  width: 16px;
+}
+.actions .bell-icon .indicator {
+  background: #4c75f2;
+  border-radius: 50%;
+  height: 7px;
+  position: absolute;
+  right: -3px;
+  top: -3px;
+  width: 7px;
+}

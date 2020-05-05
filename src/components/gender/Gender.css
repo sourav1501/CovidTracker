@@ -1,0 +1,17 @@
+.gender-container select {
+  background-color: #eee;
+
+  background-position: calc(100% - 13px) 50%, calc(100% - 8px) 50%;
+  background-repeat: no-repeat;
+  background-size: 5px 5px, 5px 5px;
+  border: 2px solid #e8e8e9;
+  border-radius: 4px;
+  color: #6c757d;
+  cursor: pointer;
+  font-family: "archia";
+  font-weight: 900;
+  margin: 0.2rem 1.1rem;
+  padding: 0.5rem;
+  width: 130px;
+  outline: none;
+}

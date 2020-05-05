@@ -1,0 +1,90 @@
+/* .legend {
+  background: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: archia;
+  justify-content: center;
+  z-index: 101;
+}
+.legend > * {
+  align-self: center;
+}
+.legend .legend-left {
+  display: flex;
+  flex-direction: row;
+}
+.legend select {
+  margin-left: 1rem;
+}
+.legend h5 {
+  color: #6c757d;
+  margin: 0;
+  margin-right: 0.5rem;
+}
+.legend h5.is-female {
+  color: #fb5581;
+}
+.legend h5.is-male {
+  color: #4c75f2;
+}
+.legend h5.is-local {
+  color: #ff073a;
+}
+.legend h5.is-imported {
+  color: #201aa2 dd;
+}
+.legend .circle {
+  background: #6c757d 99;
+  border-radius: 50%;
+  height: 0.8rem;
+  margin-right: 0.25rem;
+  width: 0.8rem;
+}
+.legend .circle.is-female {
+  background: #fb5581;
+}
+.legend .circle.is-male {
+  background: #4c75f2;
+}
+.legend .circle.is-local {
+  background: #ff073a;
+}
+.legend .circle.is-imported {
+  background: #201aa2 dd;
+}
+.legend .circle.is-in {
+  background: url("/flags/india.png");
+  background-size: cover !important;
+}
+.legend .circle.is-uk {
+  background: url("/flags/uk.png");
+  background-size: cover !important;
+}
+.legend .circle.is-us {
+  background: url("/flags/usa.png");
+  background-size: cover !important;
+}
+.legend .circle.is-th {
+  background: url("/flags/thailand.png");
+  background-size: cover !important;
+}
+.legend .circle.is-ph {
+  background: url("/flags/philippines.png");
+  background-size: cover !important;
+}
+.legend .circle.is-it {
+  background: url("/flags/italy.png");
+  background-size: cover !important;
+}
+.legend .circle.is-ca {
+  background: url("/flags/canada.png");
+  background-size: cover !important;
+}
+.legend .circle.is-id {
+  background: url("/flags/indonesia.png");
+  background-size: cover !important;
+}
+.legend .circle.is-mm {
+  background: url("/flags/myanmar.png");
+  background-size: cover !important;
+} */

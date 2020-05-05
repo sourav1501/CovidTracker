@@ -1,0 +1,20 @@
+.datePicker {
+  align-items: center;
+  background-color: #eee;
+  border-radius: 4px;
+  color: #6c757d;
+  cursor: default;
+  font-family: "archia";
+  font-size: 12px;
+  font-weight: 900;
+  height: 2.19rem;
+  margin: 0.2rem 0.1rem;
+  padding: 0.5rem;
+  -webkit-padding-start: 1px;
+  padding-inline-start: 1px;
+  width: auto;
+  outline: none;
+}
+.react-date-picker__wrapper {
+  border: none !important;
+}

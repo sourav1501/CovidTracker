@@ -1,0 +1,44 @@
+.header-container {
+  background: #fff !important;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.12), inset 0 -1px 0 0 #dadce0;
+  padding: 0.5rem;
+  width: 94%;
+  margin: 0 0 0 auto;
+}
+.radio-button h5 {
+  margin: 0;
+}
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+.female {
+  color: #fb5581;
+  margin-right: 10px;
+}
+.male {
+  color: #4c75f2;
+  margin-right: 10px;
+}
+.unknown {
+  color: #6c757d;
+}
+.is-female {
+  background: #fb5581;
+}
+.is-male {
+  background: #4c75f2;
+}
+.is-unknown {
+  background: rgba(108, 117, 125, 0.6);
+}
+.radio-button {
+  margin-top: 12px;
+}
+.circle {
+  border-radius: 50%;
+  height: 0.8rem;
+  margin-right: 0.25rem;
+  width: 0.8rem;
+}
