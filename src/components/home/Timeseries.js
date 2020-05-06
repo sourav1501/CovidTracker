@@ -323,15 +323,10 @@ function TimeSeries({ timeseriesProp, chartType, mode, logMode, isTotal }) {
             .attr("fill", "none")
             .attr("stroke", color + "99")
             .attr("stroke-width", 4);
-          // HACK
-          // Path interpolation is non-trivial. Ideally, a custom path tween
-          // function should be defined which takes care that old path dots
-          // transition synchronously along with the path transition. This hack
-          // simulates that behaviour.
+         
           if (path.attr("d")) {
             const n = path.node().getTotalLength();
             const p = path.node().getPointAtLength(n);
-            // Append points at end of path for better interpolation
             path.attr(
               "d",
               () => path.attr("d") + `L${p.x},${p.y}`.repeat(3 * T)
@@ -348,14 +343,8 @@ function TimeSeries({ timeseriesProp, chartType, mode, logMode, isTotal }) {
                 .y((d) => yScale(d[typeTotal]))
                 .curve(d3.curveMonotoneX)
             );
-          // Using d3-interpolate-path
-          // .attrTween('d', function (d) {
-          //   var previous = path.attr('d');
-          //   var current = line(d);
-          //   return interpolatePath(previous, current);
-          // });
+        
         } else {
-          /* DAILY TRENDS */
           svg.selectAll(".trend").remove();
           svg
             .selectAll(".stem")
@@ -402,7 +391,6 @@ function TimeSeries({ timeseriesProp, chartType, mode, logMode, isTotal }) {
   const chartKey4 = chartType === 1 ? "totaldeceased" : "dailydeceased";
   const chartKey5 = chartType === 1 ? "totaltested" : "dailytested";
 
-  // Function for calculate increased/decreased count for each type of data
   const currentStatusCount = (chartType) => {
     if (timeseries.length <= 0 || index <= 0 || index >= timeseries.length)
       return "";
