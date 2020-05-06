@@ -2,6 +2,8 @@ import Table from "./Table";
 // import '../css/table.css'
 import "./Home.css";
 import MapExplorer from "./Map";
+import TimeSeriesExplorer from "./Timeseriesexplorer";
+
 import Search from "./Search";
 import Minigraph from "./Minigraph";
 import { STATE_CODES_REVERSE, MAP_META } from "../../Constants";
@@ -160,7 +162,13 @@ function Home(props) {
   return (
     <React.Fragment>
       <div className="Home">
-       
+        {/* <Helmet>
+          <title>Coronavirus Outbreak in India - covid19india.org</title>
+          <meta
+            name="title"
+            content="Coronavirus Outbreak in India: Latest Map and Case Count"
+          />
+        </Helmet> */}
 
         <div className="home-left">
           <Search />
@@ -210,7 +218,16 @@ function Home(props) {
                 setMapOption={setMapOption}
               />
             )}
-          
+            {timeseries && (
+              <TimeSeriesExplorer
+                timeseries={timeseries[regionHighlighted?.state.code || "TT"]}
+                activeStateCode={regionHighlighted?.state.code || "TT"}
+                onHighlightState={onHighlightState}
+                states={states}
+                anchor={anchor}
+                setAnchor={setAnchor}
+              />
+            )}
           </React.Fragment>
         </div>
       </div>
